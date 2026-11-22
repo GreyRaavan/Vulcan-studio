@@ -29,6 +29,7 @@ jobs:
           mkdir -p public
           unzip -o vulcan-studio-site-dental-integrated.zip -d public
           touch public/.nojekyll
+          echo "vulcanstudio.space" > public/CNAME
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
